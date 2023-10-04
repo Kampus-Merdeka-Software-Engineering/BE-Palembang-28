@@ -1,16 +1,11 @@
-import express from "express";
-import cors from "cors";
-import keluhanRoute from "./routes/keluhanRoute.js";
-
-const port = process.env.PORT || 3000;
-
+const express = require("express");
 const app = express();
+const port = 3000;
 
-app.use(cors());
-app.use(express.json());
-app.use(keluhanRoute);
-
-app.listen(port, "0.0.0.0", function () {
-  console.log("Server up and running...");
+app.get("/", (req, res) => {
+  res.send("Hello World!");
 });
 
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});

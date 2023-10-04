@@ -16,7 +16,7 @@ const Poliklinik = db.define(
     deskripsi_poliklinik: {
       type: DataTypes.TEXT,
     },
-    deskripsi_poliklinik: {
+    gambar_poliklinik: {
       type: DataTypes.TEXT,
     },
   },

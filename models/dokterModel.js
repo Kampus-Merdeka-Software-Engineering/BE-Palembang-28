@@ -22,7 +22,7 @@ const Dokter = db.define(
     id_poliklinik: {
       type: DataTypes.INTEGER,
     },
-    dokter_dokter: {
+    gambar_dokter: {
       type: DataTypes.TEXT,
     },
   },

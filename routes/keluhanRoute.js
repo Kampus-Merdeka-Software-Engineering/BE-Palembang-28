@@ -14,8 +14,5 @@ router.get("/keluhan/:id_keluhan", getUserById);
 router.post("/keluhan", createKeluhan);
 router.patch("/keluhan/:id_keluhan", updateKeluhan);
 router.delete("/keluhan/:id_keluhan", deleteKeluhan);
-router.use("/", (req, res) => {
-  res.send('Haloo')
-});
 
 export default router;

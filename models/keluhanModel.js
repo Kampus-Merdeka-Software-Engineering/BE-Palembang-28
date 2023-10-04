@@ -4,7 +4,8 @@ import db from "../config/Database.js";
 const { DataTypes } = Sequelize;
 
 
-const Keluhan = db.define('keluhan',
+const Keluhan = db.define(
+  "keluhan",
   {
     id_keluhan: {
       type: DataTypes.INTEGER,
@@ -14,15 +15,15 @@ const Keluhan = db.define('keluhan',
       type: DataTypes.STRING,
     },
     jenis_kelamin: {
-      type: DataTypes.ENUM('Perempuan', 'Laki-Laki'),
+      type: DataTypes.ENUM("Perempuan", "Laki-Laki"),
     },
     waktu_keluhan: {
       type: DataTypes.ENUM(
-        '10.00 AM',
-        '12.00 AM',
-        '14.00 AM',
-        '16.00 AM',
-        '18.00 AM'
+        "10.00 AM",
+        "12.00 AM",
+        "14.00 AM",
+        "16.00 AM",
+        "18.00 AM"
       ),
     },
     umur: {
@@ -33,6 +34,9 @@ const Keluhan = db.define('keluhan',
     },
     deskripsi_keluhan: {
       type: DataTypes.TEXT,
+    },
+    nama_pasien: {
+      type: DataTypes.STRING,
     },
   },
   {

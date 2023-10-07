@@ -14,6 +14,9 @@ const Keluhan = db.define(
     nama_keluhan: {
       type: DataTypes.STRING,
     },
+    id_dokter: {
+      type: DataTypes.INTEGER,
+    },
     jenis_kelamin: {
       type: DataTypes.ENUM("Perempuan", "Laki-Laki"),
     },

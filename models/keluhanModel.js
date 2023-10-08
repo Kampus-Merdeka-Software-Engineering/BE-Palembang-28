@@ -18,7 +18,7 @@ const Keluhan = db.define(
       type: DataTypes.INTEGER,
     },
     jenis_kelamin: {
-      type: DataTypes.ENUM("Perempuan", "Laki-Laki"),
+      type: DataTypes.ENUM("Perempuan", "Laki-laki"),
     },
     waktu_keluhan: {
       type: DataTypes.ENUM(
